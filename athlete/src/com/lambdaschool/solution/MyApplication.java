@@ -2,17 +2,20 @@ package com.lambdaschool.solution;
 
 public class MyApplication implements Processor
 {
-    @Override
-    public void create(String sport)
-    {
-        System.out.println("************");
-        athlete.display(sport);
-        System.out.println("************\n");
+    // Field - Type: AthleteCreation, Name: aCreate
+    private AthleteCreation aCreate;
+
+    // Methods
+    public MyApplication(AthleteCreation aCreate) {
+        this.aCreate = aCreate;
     }
 
+    // Override Processor Method displayAthlete - return
     @Override
-    public void display(String sport)
+    public void displayAthlete()
     {
-
+        System.out.println("*******");
+        aCreate.displayAthlete();
+        System.out.println("*******\n");
     }
 }

@@ -1,6 +1,6 @@
 package com.lambdaschool.solution;
 
-public interface Processor
+public interface AthleteCreation
 {
     public void displayAthlete();
 }
